@@ -1,7 +1,7 @@
 namespace: alperen
 deploy:
   name: hwpython
-  replicas: 1
+  replicas: 2
   port: 80
   targetport: 80
   image: europe-north1-docker.pkg.dev/alperenokur-sandbox-415013/bitbucket-repo/helloworld-python
