@@ -16,7 +16,7 @@ steps:
       - 'europe-north1-docker.pkg.dev/alperenokur-sandbox-415013/bitbucket-repo/helloworld-kubernetes'
       - '.'
 
-  # Step 3: Push the image to Artifact Registry.
+  # Step 3: Push the image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
