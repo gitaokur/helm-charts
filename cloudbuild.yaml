@@ -37,7 +37,7 @@ steps:
         PROJECT=$$(gcloud config get-value core/project)
         gke-gcloud-auth-plugin --version
         export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-        gcloud container clusters get-credentials gke-cluster --region europe-north1 --project alperenokur-sandbox-415013
+        gcloud container clusters get-credentials terraform-test-cluster --region europe-north1 --project alperenokur-sandbox-415013
         gcloud secrets versions access latest --secret="hwpythoncm" > pythonconfigmap.yaml
         gcloud secrets versions access latest --secret="hwnodejscm" > nodejsconfigmap.yaml
         gcloud secrets versions access latest --secret="hwjavacm" > javaconfigmap.yaml
