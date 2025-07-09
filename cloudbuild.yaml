@@ -57,6 +57,6 @@ images:
   
 options:
   logging: CLOUD_LOGGING_ONLY
-  network:
-    name: "projects/alperenokur-sandbox-415013/locations/europe-north1/connectors/vpc-connector"
+  pool:
+    name: "projects/alperenokur-sandbox-415013/locations/europe-north1/workerPools/my-gke-pool"
 
