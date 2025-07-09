@@ -1,4 +1,4 @@
-# Steps to build, push to Artifact Registry, and deploy to GKE.
+# Steps to build, push to Artifact Registry, and deploy to GKE
 steps:
   # Step 1: Authenticate Docker with Artifact Registry
   - name: 'gcr.io/cloud-builders/gcloud'
