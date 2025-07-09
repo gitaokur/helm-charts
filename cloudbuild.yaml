@@ -50,8 +50,6 @@ steps:
 #        helm upgrade --install -f ./helm-charts/values/hwpython.yaml --set-file configValues=pythonconfigmap1.yaml hwpython ./helm-charts
 #        helm upgrade --install -f ./helm-charts/values/hwnodejs.yaml --set-file configValues=nodejsconfigmap1.yaml hwnodejs ./helm-charts
 #        helm upgrade --install -f ./helm-charts/values/hwjava.yaml --set-file configValues=javaconfigmap1.yaml hwjava ./helm-charts 
-    network:
-      name: "projects/alperenokur-sandbox-415013/locations/europe-north1/connectors/vpc-connector"
         
 # Specify the images built by this configuration
 images:
@@ -59,3 +57,6 @@ images:
   
 options:
   logging: CLOUD_LOGGING_ONLY
+  network:
+    name: "projects/alperenokur-sandbox-415013/locations/europe-north1/connectors/vpc-connector"
+
